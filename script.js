@@ -1,4 +1,4 @@
-// $(document).ready(function(){ 
+$(document).ready(function(){ 
 
 // var queryURL = "https://www.timeanddate.com/worldclock/usa/los-angeles"
 
@@ -11,13 +11,14 @@ console.log(now);
 // var d=newDate();
 // $("#leftDiv").text(getHours())
 
-$(".text-area").on("keydown", function(letter) {
-    console.log(letter)
-}
-// $(".save-Btn").on("click", function(){
 
+$("#rightDiv").on("click", function(){
+console.log("Hello");
+var letters=$("#scheduledItem").val()
+localStorage.setItem("text", letters)
+});
 // )};
-var savedText=document.querySelector(".text-area");
+// var savedText=document.querySelector(".text-area");
 
 
 
@@ -58,3 +59,4 @@ var savedText=document.querySelector(".text-area");
 // method: "GET"
 // }).then(function(response) {
 //     console.log(response)
+});
