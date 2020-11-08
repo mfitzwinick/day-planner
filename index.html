@@ -25,34 +25,93 @@
   </head>
 
   <body>
-    
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <div class="container" >
+      <div class="row" id="9am">
+        <div class="col-md-1" id="leftDiv">9:00 AM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
       
-    </header>
-    <div class="container">
-      <textarea>
-        hello</textarea>
+      <div class="row" id="10am">
+        <div class="col-md-1" id="leftDiv">10:00 AM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+      
+      <div class="row" id="11am">
+        <div class="col-md-1" id="leftDiv">11:00 AM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+      
+      <div class="row" id="12pm">
+        <div class="col-md-1" id="leftDiv">12:00 PM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
      
+      <div class="row" id="1pm">
+        <div class="col-md-1" id="leftDiv">1:00 PM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+     
+      <div class="row" id="2pm">
+        <div class="col-md-1" id="leftDiv">2:00 PM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+  
+      <div class="row" id="3pm">
+        <div class="col-md-1" id="leftDiv">3:00 PM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+   
+      <div class="row" id="4pm">
+        <div class="col-md-1" id="leftDiv">4:00 PM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+     
+      <div class="row" id="5pm">
+        <div class="col-md-1" id="leftDiv">5:00 PM</div>
+        <div class="col-md-10" id="midDiv"><textarea class="description"></textarea> </div>
+        <div class="col-md-1" id="rightDiv"><button class="saveBtn"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calendar2-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg></button></div>
+      </div>
+   
+  
+    </div>
 
-<div class="hour">9am</div>
-<div class="time-block"></div>
-<div class="description">space</div>
 
+<br>
+<br>
 
-<div class="time-block">9:00am</div><div class="row"></div><button class="saveBtn">hhhh</button>
-</div> <div="time-block"></div>
-
-
-<div class="row" id="11"></div>
-<div class="row" id="12"></div>
-<div class="row" id="1"></div>
-<div class="row" id="2"></div>
-<div class="row" id="3"></div>
-<div class="row" id="4"></div>
-<div class="row" id="5"></div>
 
 
       <!-- Timeblocks go here -->

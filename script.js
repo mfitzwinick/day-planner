@@ -7,6 +7,12 @@ const now=moment();
 console.log(now);
 $("#currentDay").text(now)
 
+// function color() {
+//     if()
+// }
+
+
+
 
 
 // var currentDay = new Date($.now());
