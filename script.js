@@ -6,6 +6,20 @@
 const now=moment();
 console.log(now);
 $("#currentDay").text(now)
+console.log(now); 
+
+// var d=newDate();
+// $("#leftDiv").text(getHours())
+
+$(".text-area").on("keydown", function(letter) {
+    console.log(letter)
+}
+// $(".save-Btn").on("click", function(){
+
+// )};
+var savedText=document.querySelector(".text-area");
+
+
 
 // function color() {
 //     if()
