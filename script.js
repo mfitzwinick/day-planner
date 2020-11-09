@@ -1,38 +1,59 @@
 $(document).ready(function(){ 
+// window.onload()= function () {
+//     if (localStorage!==null)
+//     $("#scheduledItem9").html(scheduledItem); 
+// }
 
-    const now=moment();
+const now=moment();
 console.log(now);
 $("#currentDay").text(now)
 console.log(now); 
 
 // var d=newDate();
 // $("#leftDiv").text(getHours())
-
-$("#rightDiv").on("click", function(){
-var letters=$("#scheduledItem9").val()
-localStorage.setItem("text: ", letters)
+var storage=[];
+$(".rightDiv").on("click", function(){
+    var hour = $(this).val();
+var letters=$("#" + hour).val();
+storage.push({
+    time: hour,
+    scheduled: letters
+});
+localStorage.setItem("text: ",JSON.stringify(storage))
 console.log(letters);
 });
 
 
 function reloadInfo () {
 //     for (let i=0; localStorage.length; i++) {
-        const scheduledItem=localStorage.getItem("letters")
-        $("#scheduledItem9").innerHTML='${scheduledItem9}<br/>';
+        var scheduledItem=JSON.parse(localStorage.getItem("text: "))
+        $("#" + scheduledItem.time).val(scheduledItem);
+      console.log(scheduledItem);
+}
+
+
 //     }
 // //     if ($("scheduledItem9")!==null) {
 //         location.reload();
 //     }
-};
-reloadInfo();
+reloadInfo ();
+});
 
+
+// #Pseudo Code------------------------
 //1. pull out the hour from the time - WHERE FROM????
-//2. parse out the info with JSON
-//3. use if statements to compare Hour string to Row TIME string
-//4. if a match, change color
+    // - do I put time into local storage as an object?
+
+//2. parse out the info with JSON and create a 
+//variable to represent currentHour
+
+//3. use if statements to compare Hour variable to Row TIME string
+        // code for each individual row?
+//if a match, change color ie: (.attr("class" ".past"))
+
 //5. on reload - check for local storage and re-populate
 
-
+//--------------------------------------------------
 // function color() {
 //     if()
 // }
@@ -76,4 +97,4 @@ reloadInfo();
 // method: "GET"
 // }).then(function(response) {
 //     console.log(response)
-});
+
