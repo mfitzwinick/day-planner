@@ -1,9 +1,6 @@
 $(document).ready(function(){ 
 
-// var queryURL = "https://www.timeanddate.com/worldclock/usa/los-angeles"
-
-
-const now=moment();
+    const now=moment();
 console.log(now);
 $("#currentDay").text(now)
 console.log(now); 
@@ -11,22 +8,42 @@ console.log(now);
 // var d=newDate();
 // $("#leftDiv").text(getHours())
 
-
 $("#rightDiv").on("click", function(){
-console.log("Hello");
-var letters=$("#scheduledItem").val()
-localStorage.setItem("text", letters)
+var letters=$("#scheduledItem9").val()
+localStorage.setItem("text: ", letters)
+console.log(letters);
 });
-// )};
-// var savedText=document.querySelector(".text-area");
 
+
+function reloadInfo () {
+//     for (let i=0; localStorage.length; i++) {
+        const scheduledItem=localStorage.getItem("letters")
+        $("#scheduledItem9").innerHTML='${scheduledItem9}<br/>';
+//     }
+// //     if ($("scheduledItem9")!==null) {
+//         location.reload();
+//     }
+};
+reloadInfo();
+
+//1. pull out the hour from the time - WHERE FROM????
+//2. parse out the info with JSON
+//3. use if statements to compare Hour string to Row TIME string
+//4. if a match, change color
+//5. on reload - check for local storage and re-populate
 
 
 // function color() {
 //     if()
 // }
 
-
+// Splice ( )
+// Used for adding/removing elements from array.
+// Returns an array of removed elements.
+// Changes the array.
+// For adding elements: array.splice (index, number of elements, element)
+// For removing elements: array.splice (index, number of elements)
+// Can only be used for arrays.
 
 
 
