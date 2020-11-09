@@ -4,40 +4,56 @@ $(document).ready(function(){
 //     $("#scheduledItem9").html(scheduledItem); 
 // }
 
-const now=moment();
-console.log(now);
-$("#currentDay").text(now)
-console.log(now); 
+const m=moment()
+console.log(m);
+dateDisplay=m.format("dddd"+","+ "MMMM"+" "+"Do"+" "+"YYYY");
+$("#currentDay").text(dateDisplay)
+const h=m.format("H");
+console.log(h)
 
-// var d=newDate();
-// $("#leftDiv").text(getHours())
+// function color() {
+//     for(i=9; i<9-1; i++);
+//     var row=("#").val()
+//     if ($(row==h) {
+//         addClass("past")
+//     };
+// };
+//     else if (row<h) {
+//     addClass("past");
+// }
+// else {
+//     addClass("future")
+// }
+// }
+
+
 var storage=[];
 $(".rightDiv").on("click", function(){
-    var hour = $(this).val();
-var letters=$("#" + hour).val();
-storage.push({
-    time: hour,
-    scheduled: letters
-});
+//     var hour = $(this).val();
+// var letters=$("#" + hour).val();
+// storage.push({
+//     time: hour,
+//     scheduled: letters
+// });
 localStorage.setItem("text: ",JSON.stringify(storage))
 console.log(letters);
 });
 
 
-function reloadInfo () {
-//     for (let i=0; localStorage.length; i++) {
-        var scheduledItem=JSON.parse(localStorage.getItem("text: "))
-        $("#" + scheduledItem.time).val(scheduledItem);
-      console.log(scheduledItem);
-}
+// function reloadInfo () {
+// //     for (let i=0; localStorage.length; i++) {
+//         var scheduledItem=JSON.parse(localStorage.getItem("text: "))
+//         $("#" + scheduledItem.time).text(scheduledItem);
+//       console.log(scheduledItem);
+// };
 
 
 //     }
 // //     if ($("scheduledItem9")!==null) {
 //         location.reload();
 //     }
-reloadInfo ();
-});
+// reloadInfo ();
+
 
 
 // #Pseudo Code------------------------
@@ -97,4 +113,4 @@ reloadInfo ();
 // method: "GET"
 // }).then(function(response) {
 //     console.log(response)
-
+// });
