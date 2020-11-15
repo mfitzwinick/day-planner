@@ -92,3 +92,21 @@ textarea {
     font-size: 20px;
     transition: all .3s ease-in-out;
 }
+
+textarea{
+min-width: 100%;
+}
+
+#currentDay { 
+    font-weight: bolder;
+
+}
+
+.lead {
+    color: grey !important
+}
+
+#cdlead {
+    color: blue !important
+
+}
