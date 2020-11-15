@@ -1,4 +1,4 @@
-# Perfect Day Planner READ.ME
+# Perfect Day Planner READ ME
 
 # Description/Purpose
 
