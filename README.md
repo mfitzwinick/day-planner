@@ -37,3 +37,5 @@ I will be supplying a url to the project along with a git hub url.
 
 I'd like to thank Bryan Swarthout and Wilson Lam at UCLA.  Thanks also to Dru Sanchez who helped problem solve a local storage issue, and who also provided guidance on syntax issues.
 
+### Visual Presentation
+![Planner Page] (https://mfitzwinick.github.io/perfect-day-planner/)
